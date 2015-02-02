@@ -114,7 +114,8 @@ process.TFileService = cms.Service("TFileService",
    )
 process.ExportTree = cms.EDAnalyzer("HcalNoiseAnalyzer",
   HBHERecHitCollection = cms.untracked.string('hbhereco'),
-  IsCosmic             = cms.untracked.bool(True)
+  IsCosmic             = cms.untracked.bool(True),
+  TotalChargeThreshold = cms.untracked.double(-9999)
 )
 
 # Path and EndPath definitions
