@@ -110,7 +110,7 @@ process.HBHENoiseFilterResultProducer = cms.EDProducer(
    maxNHF = cms.double(0.9)
    )
 process.TFileService = cms.Service("TFileService",
-   fileName = cms.string("NoiseTree_Commissionig2014_MinBias_v3_229684_R45_Jan23.root")
+   fileName = cms.string("HcalNoiseTree_Cosmics14_HBHErecoMethod2.root")
    )
 process.ExportTree = cms.EDAnalyzer("HcalNoiseAnalyzer",
   HBHERecHitCollection = cms.untracked.string('hbhereco'),
